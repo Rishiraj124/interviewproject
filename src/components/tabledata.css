@@ -1,0 +1,81 @@
+.spinner {
+  margin-top: 20px;
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+}
+
+.country-table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: 20px;
+}
+
+.country-table th,
+.country-table td {
+  padding: 8px;
+  text-align: left;
+}
+
+.country-table th {
+  background-color: #f0f0f0;
+  font-weight: 700;
+}
+
+.country-table td {
+  border-top: 2px solid rgb(222, 226, 230);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.pagination {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.paginationStyling {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+.pagination button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin: 0 4px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.current-page {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  margin: 0 4px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.results-per-page {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.results-per-page input {
+  margin-left: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 40px;
+  text-align: center;
+}
